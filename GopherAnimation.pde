@@ -37,7 +37,7 @@ void draw() {
     x += speed;
     if (x > width) {
       x = -walkingGopher.getWidth();
-      //exit();
+      exit();
     }
   } else {
     seeingGopher.display(pg, x, y);
@@ -48,5 +48,5 @@ void draw() {
   }
   pg.endDraw();
   image(pg, 0, 0);
-  //pg.save("frames/gopher" + nf(frameCount, 4) + ".png");
+  pg.save("frames/gopher" + nf(frameCount, 4) + ".png");
 }
